@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Logical Game</title>
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="script/custom.js"></script>
+</head>
+<body>
+  <h1>Number Game</h1>
+  <span class="instruction">Instructions</span>
+	<section class="topHead">
+  	<ul class="level">
+    	<li class="easy active">Easy</li>
+      <li class="medium">Medium</li>
+      <li class="tough">Tough</li>
+    </ul>
+  	<div class="noToFind"></div>
+    <div class="guesses">No. of Guesses:<span>0</span></div>
+  </section>
+  <div class='result'>You got the Number in <span></span> guesses</div>
+  <section class="gameContent">
+  	<div class="gameHead">
+  		<span class="column">Number</span>
+   		<span class="column">Face Value</span>
+      <span class="column">Place Value</span>
+    </div>
+    <div class="values currentValue">
+    	<div class="column">
+        <input class="numberValue" type="text" maxlength="4">
+      	<button type="submit" class="confirm" onClick="$(this).checkValues()">Confirm</button>
+      </div>
+      <span class="faceValue column"></span>
+      <span class="placeValue column"></span>
+    </div>
+  </section>
+  <div class="instructions">
+    <span class="hide">X</span>
+    <h2>How to play</h2>
+    <p>Find the 4 digit number in less possible iterations, where face value and place value gives the hint for the number.</p>
+    <p>Face value count the number of correct digits and Place value count the correct position of digits.</p>
+    <h3>Levels.</h3>
+    <ul>
+      <li>Easy: Boxes turns green if something matches to the provided digits and displays as you get its correct position.</li>
+      <li>Medium: Boxes turns green if something matches to the provided digits but number displays after perfect match of 4 digit number.</li>
+      <li>Difficult: Find digits without any hints.</li>
+    </ul>  
+  </div>
+</body>
+</html>
