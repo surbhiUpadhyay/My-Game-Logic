@@ -27,7 +27,7 @@ $(document).ready(() => {
 	$(".instruction").click(function(){
 		$(".instructions").show();
 	})
-	$(".hide").click(function(){
+	$(".hide, .startGame").click(function(){
 		$(".instructions").hide();
 	})
 });
